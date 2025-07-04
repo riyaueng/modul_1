@@ -1,0 +1,52 @@
+div {
+    padding: 20px;
+    border: 10px solid rebeccapurple;
+    width: 50%;
+}
+
+/* # Die Größe orientiert sich nur am CONTENT border und Innenabstand werden hinzugefügt! */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset immer diese 3 Werte übernehmen */
+
+div {
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    border: 10px  solid peachpuff;
+}
+
+/*
+margin: 10px; 
+*/
+
+/* Das gleiche wie –> margin: 
+10px 10px 10px 10px; {expected
+*/
+
+/* ? startend mit top bottom und dann left right */
+/* margin: 20px 30px */
+
+div:nth-last-of-type(1) {
+    padding: 20px 40px;
+    /* margin: auto; zentriert Elemente horizontal */
+    margin: auto;
+}
+
+div {
+    margin-bottom: 30px;
+}
+
+section p {
+    background-color: lightblue;
+    color: black;
+    margin: 20px;
+    display: inline-block;
+    height: 400px;
+    width: 300px;
+}

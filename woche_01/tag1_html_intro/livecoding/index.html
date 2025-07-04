@@ -1,0 +1,94 @@
+<!-- Kommentare mit cmd+shift+7 anlegen -->
+<!-- Ausrufezeichen und Tab legt das HTML-Grundgerüst an -->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML INTRO</title>
+</head>
+<body>
+<header>
+    <nav>
+        <!-- <a> ist das untergeordnete Kind von dem <nav> Element -->
+        <!-- Externer Link zu Google -->
+        <!-- Jedes Element hat schon ein paar Eigenschaften oder auf Englisch Attribute -->
+        <a href="https://www.google.com">Der Link zu Google</a>
+        <!-- Interner Link zur About Seite innerhalb unserer Seite -->
+        <!-- Relatvier Pfad ==> tag1_html_intro/assets/pages/about.html-->
+        <!-- Absoluter Pfad ==> /Users/kethariya/Documents/webapp_2501/modul_01/woche_01/Livecoding/tag1_html_intro/assets/pages/about.html -->
+        <a href="/tag1_html_intro/assets/pages/about.html">About us</a>
+        </nav>
+</header>
+<main>
+    <section>
+        <!-- h1, p sind Beispiel für Blockelemente => Sie nehmen die ganze Breite der Seite ein -->
+        <!-- a, button, input => Sie nehmen nur den Platz und die Breite ein die sie benötigen -->
+        <h1>Überschrift 1</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore natus nemo, blanditiis, distinctio ratione culpa repudiandae quis aliquid eligendi doloremque animi vitae. Assumenda sapiente repudiandae quisquam explicabo illum! Unde?
+        </p>
+    </section>
+    <section>
+        <p>
+            Lorem <b>ipsum</b> dolor sit amet consectetur, adipisicing elit. 
+            <i>Der Text ist italic</i> Ipsam perspiciatis eius placeat velit maxime autem debitis, facere omnis sit quasi ratione aliquid modi cumque corporis. Id iure ratione nostrum corporis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam perspiciatis eius placeat velit maxime autem debitis, facere omnis sit quasi ratione aliquid modi cumque corporis. 
+            
+            <span>Dieser Text ist innerhalb eines span Elements</span> Id iure ratione nostrum corporis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam perspiciatis eius placeat velit maxime autem debitis, facere omnis sit quasi ratione aliquid modi 
+            cumque corporis. Id iure ratione nostrum corporis! Lorem ipsum dolsit amet consectetur, adipisicing elit. Ipsam perspiciatis eius 
+            placeat velit maxime autem debitis, facere omnis sit quasi rationaliquid modi cumque corporis. Id iure ratione nostrum corporis!
+        </p>
+    </section>
+        <!-- Ungeordnete Liste ==> <ul> -->
+        <ul>
+            <!-- li ist das Kindelement von dem ul Element -->
+            <!-- Shortcut li + "+" + die Anzahl => li*4 -->
+            <!-- Wie kann man gleichzeitig mitselektieren => Erstmal auf ein Wort bwz. Begriff klicken und dann 0> die Kombination => cmd+d -->
+            <li>Unterlement 1</li>
+            <li>Unterlement 2</li>
+            <li>Unterlement 3</li>
+            <li>Unterlement 4</li>
+        </ul>
+        <!-- ul>li*8 -->
+        <!-- Shortcut für an verschiedenen Stellen mitselektieren => klicken + option + nochmal je nach dem woanders klicken oder Kombination => option + shift klicken -->
+        <ul>
+            <li>Unterlement 1</li>
+            <li>Unterlement 2</li>
+            <li>Unterlement 3</li>
+            <li>Unterlement 4</li>
+            <li>Unterlement 5</li>
+            <li>Unterlement 6</li>
+            <li>Unterlement 7</li>
+            <li>Unterlement 8</li>
+        </ul>
+
+        <!-- Geordnete Liste -->
+         <ol>
+            <li>Unterlement 1</li>
+            <li>Unterlement 2</li>
+            <li>Unterlement 3</li>
+            <li>Unterlement 4</li>
+         </ol>
+         <!-- Bild bzw. img -->
+        <article>
+            <!-- Bild aus dem Unterordner -->
+            <h3>Das ist ein Bild</h3>
+            <img src="./assets/img/IMG_3281.JPG" alt="Schlafende rote Katze">
+        </article>
+        <article>
+            <h3>Ein zufälliges Bild</h3>
+            <!-- Bild über URL Link einbinden -->
+            <img src="https://picsum.photos/200/300" alt="Ein zufälliges Bild">
+        </article>
+
+</main>
+<footer>
+    <p>Supercode GmbH</p>
+    <!-- Attribut target ermöglicht, dass ein neuer Tab geöffnet wird, sobald man auf einen Link klickt -->
+    <a href="https://www.super-code.de/vollzeit-weiterbildungen" target="_blank">Supercode Seite</a>
+    <a href="tel:+493456678">Ruf mich bitte an</a>
+    <a href="mailto:jdemel@gmail.com">Schreib mir eine Mail</a>
+</footer>
+</body>
+</html>

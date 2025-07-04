@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: PTSans-Bold;
+    src: url(./../fonts/PTSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: PTSans-Bold;
+    src: url(./../fonts/PTSans-Regular.ttf);
+}
+
+html {
+    font-size: 16px;
+    font-family: PTSans-Bold, Arial, sans-serif;
+}
+
+body {
+    background-image: url(../img/abstract.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    padding: 5%;
+    text-align: center;
+}
+
+article {
+    padding: 3%;
+    margin: 0 100px 0 100px;
+    border-radius: 5rem;
+    background-color: rgba(255, 255, 255, 0.638);
+}
+
+h1 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px white;
+    padding: 0 15% 0 15%;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 14px;
+}

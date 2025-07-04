@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+nav {
+    color:#999999;
+    margin: 25px 0px 20px 100px;
+}
+
+.hero {
+    background-image: url(../img/hero.png);;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100vw;
+    height: 577px;
+    display:flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.hero h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.einleitung {
+  text-align: center;
+  padding: 25px;
+}

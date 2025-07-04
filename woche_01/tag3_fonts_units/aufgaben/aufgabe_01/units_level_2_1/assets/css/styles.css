@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pets {
+    border: 2px solid black;
+    padding: 20px 10px;
+}
+
+li {
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+
+ul {
+    padding-inline-start: 1.2em;
+    list-style: none;
+}
+
+.dog {
+    list-style-type: "\1f436";
+}
+
+.cat {
+    list-style-type: "\1f431";
+}
+
+.parrot {
+    list-style-type: "\1f99c";
+}
+
+.snake {
+    list-style-type: "\1f40d";
+}
+
+.lizard {
+    list-style-type: "\1f98e";
+}
+

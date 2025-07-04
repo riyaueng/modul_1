@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --width: 200px;
+}
+
+.pixel {
+    width: 100px;
+}
+
+.prozent {
+    width: 25%;
+}
+
+.eltern {
+    width: 10em;
+}
+
+.roots {
+    width: 20rem;
+}
+
+.elterncontainer {
+    border: 2px solid red;
+    width: 800px;
+}
+
+.elterncontainer img {
+    width: 100%;
+    display: block;
+}
+
+.viewwidth {
+    width: 50vw;
+}
+
+.viewheight {
+    height: 20vh;
+}
+

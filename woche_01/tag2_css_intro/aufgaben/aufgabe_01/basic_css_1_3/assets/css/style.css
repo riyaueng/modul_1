@@ -1,0 +1,39 @@
+/*
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+*/
+
+header {
+    background-color: rgb(227, 247, 240);
+}
+
+ul {
+    list-style: none;
+}
+
+nav a {
+    color:rgb(66, 188, 207);
+}
+
+.pinsel {
+    width: 400px;
+}
+
+.malerei {
+    width: 600px;
+}
+
+.atelier {
+    width: 800px;
+}
+
+span {
+    color:rgb(66, 188, 207);
+}
+
+a {
+    color: rgb(203, 126, 242);
+}

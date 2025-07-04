@@ -1,0 +1,20 @@
+
+/*
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+*/
+
+article {
+    display: inline-block;
+    width: 300px;
+    border: solid;
+    margin: 20px;    
+    padding: 20px;
+}
+
+article ul {
+    list-style: none;
+}
