@@ -4,11 +4,59 @@
     padding: 0px;
 }
 
-h1, h2, h3 {
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ @font-face {
+  font-family: "Cinzel-Bold";
+  src: url(../fonts/Cinzel-Bold.ttf);
+ }
+
+  @font-face {
+  font-family: "Cinzel-Regular";
+  src: url(../fonts/Cinzel-Regular.ttf);
+ }
+
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url(../fonts/Poppins-Regular.ttf);
+  }
+
+body {
+  width: 100vw;
+}
+
+h2 {
+  font-family: "Cinzel-Regular", "serif";
+}
+
+h3 {
+  font-family: "Cinzel-Bold", "serif";
+}
+
+main, footer {
+  text-align: center;
+}
+
+main article {
+  margin: 100px 100px;
+}
+
+.hero h1 {
+  font-family: "Cinzel-Regular", "serif";
+  color: white;
+  font-size: 36px;
+  text-align: center;
+}
+
+p, li {
+  font-family: "Poppins-Regular", "sans-serif";
+  line-height: 30px;
+}
+
+main h2 {
+  margin-bottom: 50px;
 }
 
 nav {
@@ -20,21 +68,64 @@ nav {
     background-image: url(../img/hero.png);;
     background-repeat: no-repeat;
     background-position: top;
+    background-size: cover;
     width: 100vw;
-    height: 577px;
+    height: 100vh;
     display:flex;
     align-items: center;
-    justify-content: center;  
-}
-
-.hero h1 {
-  color: white;
-  font-size: 36px;
-  font-weight: 200;
-  text-align: center;
+    justify-content: center; 
 }
 
 .einleitung {
   text-align: center;
-  padding: 25px;
+  padding: 25px 50px 0px;
+}
+
+.galerie img {
+  margin: 38px;
+}
+
+.tourdates ul {
+  text-align: left;
+  list-style-type: none;
+}
+
+.tourdates li {
+  padding: 5px 0;
+}
+
+/* 
+ul li:nth-child(-n+4) { 
+  color: red;
+}
+
+ul li:nth-child(n+5) {
+  color: green;
+} 
+*/
+
+ul li .soldout, .leftspot:last-of-type {
+  color: red;
+}
+
+ul li .available:last-of-type {
+  color: green;
+}
+
+footer {
+  padding-top: 100px;
+  border-top: 1px solid;
+}
+
+footer section {
+  margin: 30px;
+}
+
+footer section a {
+  margin: 20px
+}
+
+footer section a img {
+  max-width: 40px;
+  min-width: 40px;
 }
