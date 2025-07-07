@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgColor,
+.bgImg,
+.bgGradient,
+.bgOpacity100,
+.bgOpacity60,
+.bgOpacity30 {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+.bgColor {
+  background-color: rgb(255, 198, 52);
+}
+
+.bgImg {
+  background-image: url("../img/goldstrings.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bgGradient {
+  background-image: linear-gradient(to right, rgb(252, 220, 74), rgb(118, 94, 0));
+}
+
+.bgOpacity100 {
+  background: rgb(255, 132, 10);
+}
+
+.bgOpacity60 {
+  background: rgb(255, 132, 100, 0.6);
+}
+
+.bgOpacity30 {
+  background: rgb(255, 132, 100, 0.3);
+}

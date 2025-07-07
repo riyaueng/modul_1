@@ -1,0 +1,74 @@
+h3 {
+  font-size: 16px;
+}
+
+ul {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+h3::first-letter {
+  color: #2e8b57;
+  font-size: 50px;
+}
+
+h3:hover::first-letter {
+  color: #00ced1;
+  font-size: 50px;
+}
+ul li::first-letter {
+  font-size: 24px;
+}
+
+ul :nth-child(1)::first-letter {
+  color: #00bfff;
+  text-decoration: overline;
+}
+
+ul :nth-child(2)::first-letter {
+  color: #c71585;
+  text-decoration: underline;
+}
+
+ul :nth-child(3)::first-letter {
+  color: #32cd32;
+  text-decoration: line-through;
+}
+
+ul :last-child {
+  text-decoration: line-through;
+}
+
+section p {
+  font-weight: 900;
+}
+
+section p:nth-of-type(odd) {
+  font-size: 12px;
+}
+
+section p:first-child::first-line {
+  color: #717171;
+  font-size: 14px;
+}
+
+p:nth-of-type(1)::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 1em;
+  margin-right: 5px;
+}
+
+section p:nth-of-type(n + 2)::first-line {
+  color: #2e8b57;
+}
+
+section p:hover:nth-of-type(n + 2)::first-line {
+  color: #483d8b;
+}
+
+section p:nth-of-type(n + 2)::first-letter {
+  color: red;
+  font-size: 24px;
+}
