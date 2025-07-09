@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Forms Level 1_1</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <section class="section__name">
+          <label for="name">Name</label>
+          <input type="text" name="vorname" id="name" placeholder="Vorname" required />
+          <input type="text" name="nachname" id="name" placeholder="Nachname" required />
+        </section>
+
+        <section class="section__mail">
+          <label for="mail">Email</label>
+          <input type="mail" name="mail" id="mail" required />
+        </section>
+
+        <section class="section__theme">
+          <div>
+            <label for="theme">Thema</label>
+            <select name="theme" id="theme">
+              <option value="ad">Advertise</option>
+              <option value="partner">Partnership</option>
+              <option value="message">Message</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="section_textmessage">
+          <div>
+            <label for="textmessage">Nachricht</label>
+            <textarea name="textmessage" id="textmessage" required></textarea>
+          </div>
+        </section>
+
+        <section class="section__submit">
+          <div>
+            <input type="submit" value="submit" />
+          </div>
+        </section>
+      </fieldset>
+    </form>
+  </body>
+</html>
