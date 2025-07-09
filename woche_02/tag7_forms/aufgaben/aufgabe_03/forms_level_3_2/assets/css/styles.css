@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+fieldset {
+  max-width: 380px;
+  margin: auto;
+  padding: 14px;
+  background-color: rgb(27, 42, 48);
+  border: none;
+  color: white;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  margin: 50px 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.section__btns {
+  text-align: center;
+}
+
+.section__btns button {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: lighter;
+  border: none;
+  padding: 20px 30px;
+  width: 48%;
+  background-color: transparent;
+}
+
+.section__btns .activpage {
+  background-color: rgb(68, 181, 121);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(87, 191, 87);
+}
+
+button:active {
+  background-color: rgb(34, 213, 67);
+}
+
+.section__finalbtn button {
+  background-color: rgb(68, 181, 121);
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  word-spacing: 0.5em;
+  letter-spacing: 0.2em;
+  padding: 16px 20px;
+  width: 100%;
+  box-shadow: 2px 2px 1px rgba(255, 255, 255, 0.479) inset, -2px -2px 1px black inset;
+}
+
+.section__finalbtn button:active {
+  box-shadow: -2px -2px 1px rgba(255, 255, 255, 0.479) inset, 2px 2px 1px black inset;
+}
+
+.section__btns button a,
+.section__finalbtn button {
+  text-decoration: none;
+  color: white;
+}
+
+#text,
+#mail,
+#password,
+#name {
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 1px black inset, -1px -1px 1px rgba(255, 255, 255, 0.479) inset;
+  padding: 14px 20px;
+  background-color: transparent;
+}
+
+#mail,
+#password {
+  width: 100%;
+}
+
+/* HTML: Sign Up Styling  */
+
+#name {
+  width: 49.4%;
+}
+
+/* HTML: Log In Styling  */
+
+.section__forgot {
+  margin: 30px 10px;
+  text-align: right;
+}
+
+.section__forgot a {
+  color: rgb(15, 124, 82);
+}
