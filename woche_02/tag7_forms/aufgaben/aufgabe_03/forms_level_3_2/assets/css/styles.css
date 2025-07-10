@@ -40,27 +40,30 @@ section {
 .section__btns button {
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
+  color: white;
   font-weight: lighter;
   border: none;
-  padding: 20px 30px;
-  width: 48%;
+  padding: 21px 0px;
+
+  width: 40%;
   background-color: transparent;
 }
 
-.section__btns .activpage {
+.section__btns a {
+  padding: 21px 15px;
+}
+
+.activpage {
   background-color: rgb(68, 181, 121);
+  padding: 21px 15px;
 }
 
 button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: rgb(87, 191, 87);
-}
-
-button:active {
-  background-color: rgb(34, 213, 67);
+.section__btns a:hover {
+  background-color: rgb(44, 223, 44);
 }
 
 .section__finalbtn button {
