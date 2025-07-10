@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h2 {
   font-family: "Raleway-VariableFont_wght", "sans-serif";
   font-size: 60px;
   font-weight: 300;
@@ -26,10 +26,20 @@ h1 {
   margin-bottom: 30px;
 }
 
+h3 {
+  font-family: "Raleway-VariableFont_wght", "sans-serif";
+  font-size: 30px;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 30px;
+}
+
 p {
   font-family: "Raleway-VariableFont_wght", "sans-serif";
   font-size: 14px;
   font-weight: 300;
+  margin-bottom: 30px;
+  line-height: 2em;
 }
 
 li {
@@ -90,12 +100,13 @@ header ul li a:hover {
   height: 798px;
 }
 
-.section__hero p {
+.section__hero p,
+.section__parallax p {
   color: white;
   margin-bottom: 30px;
 }
 
-.section__hero button {
+button {
   font-family: "Raleway-VariableFont_wght", "sans-serif";
   font-size: 12px;
   font-weight: 700;
@@ -104,14 +115,11 @@ header ul li a:hover {
   color: white;
   width: 200px;
   height: 54px;
-}
-
-.readMore {
   background-color: #745cf9;
   border: 2px solid #745cf9;
 }
 
-.readMore:hover {
+button:hover {
   background-color: #4c38bd;
   border: 2px solid #4c38bd;
   transition: 0.4s ease;
@@ -125,6 +133,116 @@ header ul li a:hover {
 
 .downloadNow:hover {
   background-color: white;
+  border: 2px solid white;
   transition: 0.4s ease;
   color: black;
+}
+
+main article {
+  height: 789px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px;
+}
+
+main img {
+  max-width: 652px;
+  height: auto;
+}
+
+main article div:last-of-type {
+  max-width: 360px;
+}
+
+.article__portfolio {
+  flex-direction: row-reverse;
+}
+
+.section__parallax {
+  height: 438px;
+  background-image: url("../img/parallax.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.section__parallax p,
+.section__quote p {
+  max-width: 900px;
+}
+
+.section__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 100px 100px 0 100px;
+}
+
+.section__option div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  text-align: center;
+}
+
+.section__option img {
+  margin-top: 25px;
+  width: 800px;
+}
+
+.section__gallery {
+  background-color: black;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.section__gallery h3,
+.section__gallery p,
+.section__quote h3,
+.section__quote p {
+  color: white;
+}
+
+.divGalleryImg {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  row-gap: 117px;
+  width: 100vw;
+  padding-bottom: 30px;
+}
+
+.section__quote {
+  background-image: url("../img/wave.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  height: 466px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.quoteName {
+  padding: 20px;
+  font-weight: 700;
 }
