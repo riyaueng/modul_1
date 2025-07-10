@@ -64,6 +64,7 @@ button {
 
 .section__btns a:hover {
   background-color: rgb(44, 223, 44);
+  transition: 0.8s ease;
 }
 
 .section__finalbtn button {

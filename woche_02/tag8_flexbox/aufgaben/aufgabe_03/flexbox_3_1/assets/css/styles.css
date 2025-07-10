@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Raleway-Italic-VariableFont_wght";
+  src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-VariableFont_wght";
+  src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Raleway-VariableFont_wght", "sans-serif";
+  font-size: 60px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: "Raleway-VariableFont_wght", "sans-serif";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  font-family: "Raleway-VariableFont_wght", "sans-serif";
+  font-weight: 500;
+}
+
+header nav {
+  height: 76px;
+  padding: 30px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header ul li {
+  margin: 20px;
+}
+
+header ul li a {
+  color: #333;
+  font-size: 12px;
+}
+
+header ul li a:hover {
+  color: #337ab7;
+}
+
+.logo {
+  color: #666;
+  font-size: 20px;
+}
+
+.logo:hover {
+  color: #333;
+}
+
+.section__hero {
+  background-image: url("../img/wave.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 798px;
+}
+
+.section__hero p {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.section__hero button {
+  font-family: "Raleway-VariableFont_wght", "sans-serif";
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px auto;
+  color: white;
+  width: 200px;
+  height: 54px;
+}
+
+.readMore {
+  background-color: #745cf9;
+  border: 2px solid #745cf9;
+}
+
+.readMore:hover {
+  background-color: #4c38bd;
+  border: 2px solid #4c38bd;
+  transition: 0.4s ease;
+}
+
+.downloadNow {
+  background-color: transparent;
+  border: 2px solid white;
+  margin-left: 5px;
+}
+
+.downloadNow:hover {
+  background-color: white;
+  transition: 0.4s ease;
+  color: black;
+}
