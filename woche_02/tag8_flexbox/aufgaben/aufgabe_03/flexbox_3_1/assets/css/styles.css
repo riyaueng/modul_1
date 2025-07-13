@@ -38,6 +38,7 @@ p {
   font-family: "Raleway-VariableFont_wght", "sans-serif";
   font-size: 14px;
   font-weight: 300;
+  color: #8c979e;
   margin-bottom: 30px;
   line-height: 2em;
 }
@@ -45,6 +46,8 @@ p {
 li {
   list-style: none;
 }
+
+/* * ------------------ Header ------------------ */
 
 header {
   font-family: "Raleway-VariableFont_wght", "sans-serif";
@@ -87,6 +90,8 @@ header ul li a:hover {
   color: #333;
 }
 
+/* * ------------------ Section Hero ------------------ */
+
 .section__hero {
   background-image: url("../img/wave.jpg");
   background-position: center;
@@ -117,6 +122,7 @@ button {
   height: 54px;
   background-color: #745cf9;
   border: 2px solid #745cf9;
+  cursor: pointer;
 }
 
 button:hover {
@@ -138,16 +144,18 @@ button:hover {
   color: black;
 }
 
+/* * ------------------ Articles ------------------ */
+
 main article {
   height: 789px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 100px;
 }
 
 main img {
-  max-width: 652px;
+  max-width: 660px;
   height: auto;
 }
 
@@ -155,9 +163,17 @@ main article div:last-of-type {
   max-width: 360px;
 }
 
+.article__portfolio img,
+.article__seo div:last-of-type {
+  margin-left: 8%;
+}
+
 .article__portfolio {
   flex-direction: row-reverse;
+  background-color: #f5f5f5;
 }
+
+/* * ------------------ Section Parallax ------------------ */
 
 .section__parallax {
   height: 438px;
@@ -180,11 +196,12 @@ main article div:last-of-type {
   max-width: 900px;
 }
 
+/* * ------------------ Section Options ------------------ */
+
 .section__option {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
   padding: 100px 100px 0 100px;
 }
 
@@ -198,8 +215,10 @@ main article div:last-of-type {
 
 .section__option img {
   margin-top: 25px;
-  width: 800px;
+  max-width: 100%;
 }
+
+/* * ------------------ Section Gallery ------------------ */
 
 .section__gallery {
   background-color: black;
@@ -221,10 +240,18 @@ main article div:last-of-type {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  row-gap: 117px;
-  width: 100vw;
+  row-gap: 100px;
   padding-bottom: 30px;
 }
+
+.divGalleryImg img {
+  width: 269;
+  height: auto;
+  max-width: 25%;
+  flex-grow: 1;
+}
+
+/* * ------------------ Section Quote ------------------ */
 
 .section__quote {
   background-image: url("../img/wave.jpg");
@@ -245,4 +272,69 @@ main article div:last-of-type {
 .quoteName {
   padding: 20px;
   font-weight: 700;
+}
+
+/* * ------------------ Section Quote ------------------ */
+
+.section__clients {
+  height: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.clients_logos ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+.clients_logos a img {
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+}
+
+.clients_logos a img:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* * ------------------ Section Quote ------------------ */
+
+.section__cta {
+  background-color: #f5f5f5;
+  height: 246px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__cta h3 {
+  margin: 0 7rem;
+}
+
+.section__cta a {
+  margin-right: 6rem;
+}
+
+/* * ------------------ Footer ------------------ */
+
+footer p {
+  color: white;
+  background-color: black;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  margin: 0;
+}
+
+footer a {
+  color: #f5f5f5;
+  font-weight: 700;
+  margin: 0 0.2rem;
 }
