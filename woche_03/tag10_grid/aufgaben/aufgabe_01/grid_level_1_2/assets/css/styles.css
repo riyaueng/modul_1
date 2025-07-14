@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 20vw;
+  grid-template-rows: 70px 1fr 60px;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  gap: 24px;
+}
+
+header {
+  background-color: red;
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "Section Article1"
+    "Section Article2";
+  gap: 24px;
+}
+
+aside {
+  background-color: deeppink;
+  grid-area: aside;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer {
+  background-color: aquamarine;
+  grid-area: footer;
+}
+
+section {
+  background-color: blue;
+  /* grid-area: Section */
+  grid-row: 1 / 3;
+}
+
+article:first-of-type {
+  background-color: green;
+  grid-area: Article1;
+  /* grid-column: 2 / 2; */
+}
+
+article:last-of-type {
+  grid-area: Article2;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "Box1 Box2";
+  gap: 24px;
+}
+
+.box1 {
+  background-color: violet;
+  grid-area: Box1;
+}
+
+.box2 {
+  background-color: purple;
+  grid-area: Box2;
+}
+
+aside h2 {
+  grid-area: Headline;
+}
+
+.box3,
+.box4,
+.box5 {
+  background-color: yellow;
+}
