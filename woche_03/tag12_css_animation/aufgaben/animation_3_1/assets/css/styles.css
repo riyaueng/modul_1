@@ -1,0 +1,62 @@
+section {
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+
+section div {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
+  animation: movingballs 4s 2s linear infinite normal;
+  animation-fill-mode: forwards;
+  position: absolute;
+}
+
+@keyframes movingballs {
+  0%,
+  100% {
+    background-color: red;
+    animation-timing-function: ease-out;
+  }
+
+  25% {
+    background-color: yellow;
+    transform: translateX(300%);
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+  }
+
+  50% {
+    background-color: lime;
+    transform: translate(300%, 300%);
+    animation-timing-function: ease-out;
+  }
+
+  75% {
+    background-color: blue;
+    transform: translateY(300%);
+    animation-timing-function: ease-out;
+  }
+}
+
+.ball1 {
+  z-index: 1;
+  animation-delay: 1s;
+}
+
+.ball2 {
+  z-index: 2;
+  animation-delay: 2s;
+}
+
+.ball3 {
+  z-index: 3;
+  animation-delay: 3s;
+}
+
+.ball4 {
+  z-index: 4;
+  animation-delay: 4s;
+}

@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.exercise3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 36vh;
+  object-fit: cover;
+  display: block;
+}
+
+.card img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.box {
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+/* ! minmax() */
+
+.section__minmax {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) 200px 200px;
+  /* Spalte A ist minmal 200px, aber kann wachsen */
+  gap: 10px;
+}
+
+/* ! auto-fill ==> fügt immer neue Spalten hinzu ( selbst wenn sie leer bleiben */
+
+/* ! Es füllt die Zeilen mit so vielen Zeilen wie möglich, basiert auf der verfügbaren Breite und wenn es nicht genug Inhalt gibt, bleiben leere Spalten im Grid */
+
+.autofill,
+.autofill-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+/* Warum auto? */
+/* ? auto bei grid-column oder grid-row bedeutet: "Fang dort an, wo es Platz gibt */
+
+/* * Das Element .g beginnt automatisch an der nächsten freien Spalte (auto)und spannt sich über zwei Spalten hinweg */
+
+.autofill-2 .a {
+  background-color: aqua;
+  grid-column: auto / span 2;
+}
+
+.autofill-2 .k {
+  background-color: beige;
+  grid-column: auto / span 2;
+}
+
+.autofill-2 .g {
+  background-color: burlywood;
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+}
+
+/* ! auto-fill vs. auto-fit */
+
+.container {
+  display: grid;
+}
+
+/* ! auto-fill: behaltet die Struktur bei, auch wenn leere Spalten vorhanden sind, bzw mehr Platz gibt */
+
+.fill {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+/* ! auto-fit: passt sich der Struktur an, sodass leere Spalten verschwinden und die Elemente den verfügbaren Platz einnehmen */
+
+.fit {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.grid-element {
+  background-color: deeppink;
+  padding: 20px;
+  border: 1px solid grey;
+}

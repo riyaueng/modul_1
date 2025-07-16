@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  /* ! Mehrere Möglichkeiten zum Zentrieren der Inhalte */
+  /* text-align: center; */
+
+  /* margin: 5% auto;
+  width: 80vw; */
+
+  padding: 5% 15%;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+code {
+  color: blue;
+  font-weight: bold;
+}
+
+/* === Box und Container === */
+
+.box-container {
+  gap: 10px;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  border: 2px solid gray;
+  width: 100px;
+  height: 100px;
+}
+
+.static {
+  background-color: rosybrown;
+}
+
+.relative {
+  background-color: rgb(95, 236, 152);
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+
+.relative-wrapper {
+  position: relative;
+}
+
+.absolute {
+  background-color: plum;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.fixed {
+  background-color: rgb(250, 130, 154);
+  position: fixed;
+  right: 10px;
+  bottom: 120px;
+}
+
+.sticky {
+  background-color: rgb(219, 253, 107);
+  position: sticky;
+  top: 0;
+}
+
+article:last-of-type .box-container {
+  background-color: rgb(218, 218, 218);
+  align-items: flex-start;
+  height: 50vh;
+  margin-bottom: 4rem;
+}
+
+.ich-schaffe-platz {
+  height: 100vh;
+}
+
+.button {
+  text-decoration: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  color: pink;
+  background-color: deeppink;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
