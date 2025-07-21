@@ -245,7 +245,7 @@ main article div:last-of-type {
 }
 
 .divGalleryImg img {
-  width: 269;
+  width: 269vw;
   height: auto;
   max-width: 25%;
   flex-grow: 1;
