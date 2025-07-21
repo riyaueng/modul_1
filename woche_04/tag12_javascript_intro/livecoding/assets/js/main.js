@@ -32,7 +32,7 @@ console.log(alter)
 // * z. B.
 console.log("Hallo ich bin daaa")
 
-// * number => Die Zahlen erden in der Konsole fabrig angezeigt
+// * number => Die Zahlen werden in der Konsole farbig angezeigt
 
 const number1 = 17
 console.log(number1)
