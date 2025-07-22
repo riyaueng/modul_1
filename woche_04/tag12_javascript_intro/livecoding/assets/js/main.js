@@ -105,10 +105,10 @@ console.log(fullName)
 console.log("ich heiße " + firstName + " " + lastName + " und ich wohne in " + city)
 
 // # template Literals => schreiben wir in die Backticks ``` + $ + {}
-// * Das können wir mit Ansführungszeichen leider nicht kombinieren
+// * Können wir mit Ansführungszeichen leider nicht kombinieren
 // * Hier werden Zeilenumbrüche, Leerzeichen und Einrückung beachtet
 // * z. B.
-console.log(`ich bin ${firstName} ${lasName} und wohne in ${city}`)
+console.log(`ich bin ${firstName} ${lastName} und wohne in ${city}`)
 
 // * Mit Zuweisungsoperator += können wir den Satz "hallo was geht" nach dem Satz "hello wasupp" anhängen
 //  ! Variante 1
@@ -147,7 +147,7 @@ let a = 1
 const summe = x + 1
 console.log(summe)
 
-// * Hie rwird ebenfalls 1 addiert, dies ist aber eine kurzschreibweise + das darf bei einer neuen Deklaration nicht verwendet werden
+// * Hier wird ebenfalls 1 addiert, dies ist aber eine kurzschreibweise + das darf bei einer neuen Deklaration nicht verwendet werden
 // ! let summ2 = a++
 a++
 console.log(a)
