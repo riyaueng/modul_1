@@ -1,24 +1,14 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+function weather() {
+  const inputNum = document.querySelector(".weather_numbers").value
+  const hinweis = document.querySelector(".weather_note")
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+  if (inputNum >= 8 && inputNum <= 10) {
+    hinweis.innerHTML = "<p>super</p>"
+  } else if (inputNum >= 6 && inputNum <= 7) {
+    hinweis.innerHTML = "<p>gut</p>"
+  } else if (inputNum >= 3 && inputNum <= 5) {
+    hinweis.innerHTML = "<p>okay</p>"
+  } else if (inputNum >= 0 && inputNum <= 2) {
+    hinweis.innerHTML = "<p>schlecht</p>"
+  }
+}

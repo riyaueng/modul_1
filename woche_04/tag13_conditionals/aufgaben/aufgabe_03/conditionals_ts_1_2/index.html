@@ -1,13 +1,19 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Conditionals TS Level 1_2</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <h2>Wetter-Qualität</h2>
+    <form onsubmit="weather(); return false">
+      <input type="number" class="weather_numbers" min="0" max="10" />
+      <button type="submit">Senden</button>
+      <div class="weather_note"></div>
+    </form>
+
+    <script src="./src/main.js"></script>
   </body>
 </html>
