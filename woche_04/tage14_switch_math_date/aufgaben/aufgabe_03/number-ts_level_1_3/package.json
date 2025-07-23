@@ -1,0 +1,18 @@
+{
+  "name": "number-ts_level_1_3",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.0.4"
+  },
+  "dependencies": {
+    "date-fn": "^0.0.2",
+    "date-fns": "^4.1.0"
+  }
+}
