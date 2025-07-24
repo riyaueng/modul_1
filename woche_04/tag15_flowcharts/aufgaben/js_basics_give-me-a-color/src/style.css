@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30vh;
+}
+
+.form_color {
+  border: 1px solid black;
+  border-radius: 10px;
+  max-width: 200px;
+  padding: 25px 25px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3,
+#input_color,
+#btn_color {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+#btn_color {
+  background-color: rgb(53, 255, 53);
+}
