@@ -25,7 +25,7 @@ import "./style.css"
 
 // console.log(changeColor)
 
-// * Lösungweg mit .addEventListener
+// * Lösungsweg mit .addEventListener
 
 const green = "#228B22"
 const purple = "#6C046C"
